@@ -26,3 +26,6 @@
 7. levantar el servidor web con 
    python manage.py runserver 
    uego ingresar localhost:8000/admin e ingresar las credenciales        creadas en el superusuario
+
+
+xxxx
