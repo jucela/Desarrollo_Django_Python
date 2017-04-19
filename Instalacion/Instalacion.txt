@@ -27,5 +27,18 @@
    python manage.py runserver 
    uego ingresar localhost:8000/admin e ingresar las credenciales        creadas en el superusuario
 
+*****CREAR MODULO O APLICACION****
+ 1. para crear el modulo o aplciacion 'pagina' Ingresar   el sigiente     comando en la carpeta 'src'
+    python manage.py startapp pagina
+    
+    *proyecto1/src/proyecto1/setting.py
+     'DIRS': [os.path.join(BASE_DIR,'templates')],
 
-xxxx
+    *proyecto1/src/proyecto1/urls.py
+      from pagina.views import inicio
+      url(r'^$',inicio)
+    *proyecto1/src/pagina/views.py
+      def inicio(request):
+      return  render(request,"inicio.html",{});
+
+    luego  crear la carpeta 'templates' dentro de 'src' y crear el     archivo inicio.html
